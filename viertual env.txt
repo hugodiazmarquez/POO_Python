@@ -1,0 +1,16 @@
+Crear Ambiente virtual usando cmder
+
+D:\Platzi\POO y algoritmos con python\graficado
+λ python -m venv env
+
+D:\Platzi\POO y algoritmos con python\graficado
+λ env\Scripts\activate.bat
+
+D:\Platzi\POO y algoritmos con python\graficado
+(env) λ
+
+deactivate para salir del ambiente virtual
+
+https://www.hackerrank.com
+https://exercism.io/
+https://www.freecodecamp.org/learn
