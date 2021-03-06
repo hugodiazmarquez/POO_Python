@@ -38,8 +38,8 @@ if __name__=="__main__":
 
     print("Jugaremos juego llamado Cowbull!") #explanation
     print("Yo generaré un numero de 4 digitos, y tú tienes que adivinar los numeros un digito a la vez.")
-    print("Por cada numero adivinado en la posicion incorrecta, ganas 1 cow. Por cada numero correcto en la posicion correcta, ganas 1 bull.")
-    print("El juego termina cuando obtienes 4 bulls!")
+    print("Por cada numero adivinado en la posicion incorrecta, ganas 1 vaca. Por cada numero correcto en la posicion correcta, ganas 1 toro.")
+    print("El juego termina cuando obtienes 4 toros!")
     print("Escribe exit para salir en cualquier momento. \n")
 
     while playing:
@@ -49,7 +49,7 @@ if __name__=="__main__":
         cowbullcount = compare_numbers(number,user_guess)
         guesses+=1
 
-        print("Tú tienes "+ str(cowbullcount[0]) + " cows, y " + str(cowbullcount[1]) + " bulls.\n")
+        print("Tú tienes "+ str(cowbullcount[0]) + " vacas, y " + str(cowbullcount[1]) + " toros.\n")
 
         if cowbullcount[1]==4:
             playing = False
