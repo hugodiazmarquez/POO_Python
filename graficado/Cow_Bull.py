@@ -34,6 +34,8 @@ if __name__=="__main__":
     number = str(random.randint(0,9999)) #random 4 digit number
     guesses = 0
 
+    print(number)
+
     print("Jugaremos juego llamado Cowbull!") #explanation
     print("Yo generaré un numero de 4 digitos, y tú tienes que adivinar los numeros un digito a la vez.")
     print("Por cada numero adivinado en la posicion incorrecta, ganas 1 cow. Por cada numero correcto en la posicion correcta, ganas 1 bull.")
@@ -51,7 +53,7 @@ if __name__=="__main__":
 
         if cowbullcount[1]==4:
             playing = False
-            print("Ganaste el juego despues de " + str(guesses) + "! El numero fue "+str(number))
+            print("Ganaste el juego despues de " + str(guesses) + " intentos! El numero fue "+str(number))
             break #redundant exit
         else:
             print("Tu numero aun no es correcto, intenta de nuevo.")
