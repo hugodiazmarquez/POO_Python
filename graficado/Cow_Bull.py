@@ -20,10 +20,13 @@ import random
 def compare_numbers(number, user_guess):
     cowbull = [0,0] #cows, then bulls
     for i in range(len(number)):
-        if number[i] == user_guess[i]:
-            cowbull[1]+=1
-        else:
-            cowbull[0]+=1
+        for j in range(len(number)):
+            if number[i] == user_guess[j]:
+                if i==j:
+                    cowbull[1]+=1
+                else:
+                    cowbull[0]+=1
+                    
     return cowbull
 
 if __name__=="__main__":
